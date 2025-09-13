@@ -1,0 +1,133 @@
+@import url(<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />);
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+}
+body{
+    background-color: rgb(4, 4, 53);
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+.navbar{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    padding: 25px 9%;
+    /* background-color: slateblue; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+.navbar .logo{
+    font-size: 30px;
+    font-weight: 700px;
+}
+.navbar ul{
+    display: flex;
+}
+.navbar ul li{
+    list-style: none;
+    margin-left: 35px;
+}
+.navbar ul li a{
+    font-size: 20px;
+    font-weight: 500;
+    transition: 0.5s;
+} 
+.navbar ul li:hover a,
+.navbar ul li.active a{
+    color: green;
+}
+      
+.home{
+    display: flex;
+    align-items: center;
+    height: 100px;
+    padding: 60px 9% 0;
+    color: white;
+    margin-top: 350px;
+}
+.home-info h1{
+    font-size: 55px;
+}
+.home-info h2{
+    font-size: 32px;
+    margin-top: 10px;
+}
+.home-info p{
+    font-size: 16px;
+    margin: 10px 0 25px;
+}
+.home-info .btn-sci{
+    display: flex;
+    align-items: center;
+}
+.btn{
+    display: inline-block;
+    padding: 10px 30px;
+    background: rgb(30, 226, 30);
+    border: 2px solid rgb(30, 226, 30);
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgb(30, 226, 30);
+    font-size: 16px;
+    color: black;
+    font-weight: 600;
+    transition: .5s;
+}
+.btn:hover{
+    background: transparent;
+    color: rgb(30, 226, 30);
+    box-shadow: none;
+}
+.home-info .btn-sci .sci{
+    margin-left: 20px;
+
+}
+.home-info .btn-sci .sci a{
+    display: inline-flex;
+    padding: 8px;
+    border: 2px solid rgb(30, 226, 30);
+    border-radius: 50%;
+    font-size: 20px;
+    color: rgb(30, 226, 30);
+    margin: 0 8px;
+    transition: .5s;
+}
+.home-info .btn-sci .sci a:hover{
+    background: rgb(30, 226, 30);
+    color: black;
+    box-shadow: 0 0 10px rgb(30, 226, 30);
+}
+.home-img .img-box{
+    width: 32vw;
+    height: 32vw;
+    background: white;
+    border-radius: 50%;
+    padding: 5px;
+}
+.home-img .img-box .img-item{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: slateblue;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+.home-img .img-box .img-item img{
+    position: absolute;
+    display: block;
+    width: 98%;
+    
+    object-fit: cover;
+}
